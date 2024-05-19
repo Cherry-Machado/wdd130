@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-    --primary-color: #8b8c89;
+    --primary-color: #666663;
     --secondary-color: #274c77;
     --accent1-color: #a3cef1;
     --accent2-color: #6096ba;
@@ -15,10 +15,11 @@
     --nav-hoover-background-color: #6096ef;
 }
 
+
 body {
     font-family: var(--paragraph-font);
     max-width: 960px;
-    padding: 20px;
+    padding: 2rem;
     margin: auto;
 }
 
@@ -33,37 +34,69 @@ h6 {
 }
 
 header {
-    padding: 20px;
+    margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	max-width: 1000px;
     background-color: var(--accent1-color);
+}
+
+
+header img {
+    margin-left: 6rem;
+    transition: 0.5s;
+}
+
+header img:hover {
+    -moz-transform: scale(1.4) rotate(360deg) skew(0deg, 1deg);
+    -webkit-transform: scale(1.4) rotate(360deg) skew(0deg, 1deg);
+    -o-transform: scale(1.4) rotate(360deg) skew(0deg, 1deg);
+    -ms-transform: scale(1.4) rotate(360deg) skew(0deg, 1deg);
+    transform: scale(1.4) rotate(360deg) skew(0deg, 1deg);
 }
 
 p {
     padding: 0;
-    text-align: justify;
+   
 }
 
-nav {
-    background-color: var(--nav-background-color);
+figcaption {
+    font-family: var(--heading-font);
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nav-header {
+    background-color:  var(--accent1-color);;
     font-size: 1.2rem;
-    display: inline
+    text-align: right;
 }
 
-nav a {
+.navigation {
+    display: flex;
+    list-style: none;
+}
+
+.nav-header a {
     color: var(--primary-color);
     text-decoration: none;
     padding: 1rem;
     font-weight: bold;
 }
 
-nav a:link,
-nav a:visited {
+.nav-header a:link,
+.nav-header a:visited {
     /* color: var(--nav-link-color) */
     color: var(--primary-color);
 
 
 }
 
-nav a:hover {
+.nav-header a:hover {
     color: var(--nav-hoover-link-color);
     background-color: var(--nav-hoover-background-color);
 
@@ -83,36 +116,196 @@ nav a:hover {
 .hero h1 {
     color: white;
     position: absolute;
-    top: 50px;
-    left: 305px;
-    padding: 10px;
-    background-color: rgba(19, 212, 219, 0.3)
+    top: 2.5rem;
+    left: 17rem;
+    padding: 0.5rem;
+    background-color: rgba(6, 13, 7, 0.5)
 }
 
 
 article {
-    line-height: 25px;
+    font-family: Poppins;
+    line-height: 1.5rem;
     position: absolute;
-    top: 150px;
-    left: 55px;
-    right: 55px;
-    padding: 10px;
+    top: 9.5rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    padding: 1rem;
     color: white;
-    background-color: rgba(6, 13, 7, 0.3)
+    background-color: rgba(6, 13, 7, 0.6)
+}
+
+article p {
+  margin-left: 1.2rem;
+  text-align: justify;  
 }
 
 .hero article img {
     float: right;
     width: 25%;
     height: 25%;
-    margin-left: 10px;
+    margin: 1rem 2rem;
     text-align: justify;
+    transition: 1s;
 }
 
+.hero article img:hover {
+    -moz-transform: scale(1.2) skew(0deg, 0deg);
+    -webkit-transform: scale(1.2) skew(0deg, 0deg);
+    -o-transform: scale(1.2) skew(0deg, 0deg);
+    -ms-transform: scale(1.2) skew(0deg, 0deg);
+    transform: scale(1.2) skew(0deg, 0deg);
+}
+
+.history {
+   display: grid;
+   grid-template-columns: 2fr 1fr 2fr;
+   grid-template-rows: 23% 77%;
+ 
+}
+
+.history h2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-top:0px;
+    align-self: self-end;
+    justify-self: center;
+    
+}
+
+.history .histo-parra-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-top: 0px;
+    margin-left: 1.5rem;
+    margin-bottom: 3rem;
+
+}
+
+.history figure {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-top: 0px;
+    transition: 1s;
+}
+
+.history figure:hover {
+    -moz-transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -o-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
+}
+
+.history .histo-parra-2 {
+    margin-top: 0px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-right: 1.5rem;
+}
+
+
+.carrusel-1 {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 23% 77%;
+    justify-content:space-evenly;
+    
+  
+ }
+ 
+ .carrusel-1 h2 {
+     grid-column-start: 2;
+     grid-column-end: 5;
+     grid-row-start: 1;
+     grid-row-end: 2;
+     justify-self: center;
+     
+ } 
+ 
+  .carrusel-1 figure {
+     grid-column-start: 1;
+     grid-column-end: 2;
+     grid-row-start: 2;
+     grid-row-end: 3;
+     margin: 1rem;
+     transition: 1s;
+        
+ } 
+
+ .carrusel-1 figure:hover {
+    -moz-transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -o-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
+       
+} 
+ 
+ .carrusel-1 figure:nth-child(2) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+ }
+ 
+ .carrusel-1 figure:nth-child(3) {
+     grid-column-start: 3;
+     grid-column-end: 4;
+     grid-row-start: 2;
+     grid-row-end: 3;
+ }
+
+ .carrusel-1 figure:nth-child(4) {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.carrusel-1 figure:nth-child(5) {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}  
+
+.footer {
+    background-color:  var(--accent1-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+}
+
+.footer p {
+    margin-left: 15em;
+}
 .sociallinks {
     text-decoration: none;
 }
 
 .sociallinks a img {
-    width: 35px;
+    padding: 0.5em;
+    width: 1.5em;
+    height: 1.5em;
+    transition: 0.5s;
 }
+
+.sociallinks a img:hover {
+    -moz-transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -o-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
+    
+}
+

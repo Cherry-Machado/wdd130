@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+    color: #333;
+    background: #fff;
+}
+
+header {
+    margin: 0 auto;
+    width: 650px;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 2.2rem;
+    color: navy;
+    text-align: left;
+
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #d2cccc;
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0.6rem 1rem;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    color: #333;
+    padding: 0.5rem;
+}
+
+label {
+    text-align: left;
+    padding-right: 1rem;
+    background: #eee;
+    padding-bottom: 0.5rem;
+}
+
+.css-example-code {
+    width: 400px;
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    letter-spacing: 3px;
+
+}
+
+button {
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    justify-self: center;
+    margin: 2rem 1rem;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+footer {
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.87em;
+    color: #777;
+    border-top: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.gg-check-r {
+    background-color: navy;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 32px;
+    height: 32px;
+    border: 2px solid;
+    border-radius: 4px;
+}
+
+.gg-check-r::after {
+    color: #fff;
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    left: 10px;
+    top: 4px;
+    width: 6px;
+    height: 10px;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    transform-origin: bottom left;
+    transform: rotate(45deg);
+}

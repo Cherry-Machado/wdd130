@@ -9,3 +9,5 @@ Week 03 project: https://cherry-machado.github.io/wdd130/week03/overlay.html
 Week 04 project: https://cherry-machado.github.io/wdd130/wwr/about.html
 
 Week05 Form Project: https://cherry-machado.github.io/wdd130/week05/poll-form.html 
+
+Week05 Quiz Project: https://cherry-machado.github.io/wdd130/quiz.html

@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+html {
+    margin-top: -24px;
+    padding: 0;
+}
+
 :root {
     --primary-color: #666663;
     --secondary-color: #274c77;
@@ -41,6 +46,7 @@ header {
     border-bottom: 1px solid #ccc;
     max-width: 1000px;
     background-color: var(--accent1-color);
+    border: solid 1px #db7e16;
 }
 
 .container {
@@ -116,7 +122,7 @@ figcaption {
     display: block;
     width: 100%;
     height: auto;
-
+    border: solid 1px #db7e16;
 }
 
 .hero h1 {
@@ -175,7 +181,7 @@ article p {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-    margin-top: 0px;
+    -moz-margin-top: 100rem;
     align-self: self-end;
     justify-self: center;
 
@@ -292,7 +298,7 @@ article p {
 
 .carrusel-1 figure span {
     font-weight: bold;
-    color: #ef7711;
+    color: #db7e16;
 
 }
 
@@ -303,6 +309,7 @@ article p {
     align-items: center;
     padding: 0.5em;
     margin-top: 2rem;
+    border: solid 1px #db7e16;
 }
 
 /* .footer p {
@@ -403,13 +410,13 @@ button {
 }
 
 button:hover {
-    background-color: darkgreen;
+    background-color: #4c6110;
     color: #fff;
 }
 
 .crecer {
     flex-grow: 3;
-    border-top: 1px solid #8b8b8b;
+    border-top: 1px solid #db7e16;
 }
 
 .map {
@@ -433,4 +440,597 @@ button:hover {
 
 h3 {
     font-style: italic;
+}
+
+.call_action {
+    text-align: center;
+    margin-top: 1.6rem;
+}
+
+.contact-icon {
+    margin-top: -10px;
+    height: 150px;
+    border-radius: 15%;
+}
+
+/*Table*/
+
+table.blueTable {
+    border: 1px solid #1C6EA4;
+    background-color: #EEEEEE;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+table.blueTable td,
+table.blueTable th {
+    border: 1px solid #AAAAAA;
+    padding: 3px 5px;
+    text-align: left;
+    width: 33.33%;
+}
+
+table.blueTable tbody td {
+    font-size: 13px;
+}
+
+/* table.blueTable tr:nth-child(even) {
+    background: #D0E4F5;
+  } */
+table.blueTable thead {
+    background: #1C6EA4;
+    background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    border-bottom: 2px solid #444444;
+}
+
+table.blueTable thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    border-left: 2px solid #D0E4F5;
+}
+
+
+/* Cards*/
+
+.container-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card {
+    width: 27%;
+    position: relative;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    margin-top: 1rem;
+}
+
+.card::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 10px;
+    bottom: 15px;
+    right: 0;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+    transform: rotate(5deg);
+    transition: all 0.1s ease-in;
+}
+
+.card::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 10px;
+    bottom: 15px;
+    left: 0;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+    transform: rotate(-5deg);
+    transition: all 0.1s ease-in;
+}
+
+.card:hover:before,
+.card:hover:after {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.6);
+}
+
+.card:hover:before {
+    transform: rotate(-8deg);
+}
+
+.card:hover:after {
+    transform: rotate(8deg);
+}
+
+.card-img-1 {
+    width: 100%;
+    height: 11rem;
+    background-image: url(../images/rafting-aventura.jpg);
+    background-size: cover;
+
+}
+
+.card__img-2 {
+    width: 100%;
+    height: 11rem;
+    background-image: url(../images/rafting-aventura-2.jpg);
+    background-size: cover;
+}
+
+.card__img-3 {
+    width: 100%;
+    height: 11rem;
+    background-image: url(../images/rafting_03.jpg);
+    background-size: cover;
+}
+
+
+
+.card__span {
+    cursor: pointer;
+    font-size: 11px;
+    position: absolute;
+    color: #FFFFFF;
+    background-color: #e85934;
+    top: 10px;
+    left: 10px;
+    padding: 3px 7px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.1s ease-in;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.card__span:hover {
+    transform: translateX(5px);
+}
+
+.card-int {
+    padding: 20px 0 0 0;
+}
+
+.card-int__title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+.card-int__button {
+    cursor: pointer;
+    margin: 20px 0 0 0;
+    padding: 7px 20px;
+    width: 100%;
+    background-color: rgb(216, 255, 234);
+    border: none;
+    color: #333;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+    transition: box-shadow 0.1s ease-in;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.card-int__button:active {
+    box-shadow: 0px 0px 15px rgba(0, 119, 255, 0.5);
+}
+
+.card-int__button:hover::before {
+    animation: effect_two 0.4s 1;
+}
+
+.card-int__button::before {
+    content: 'Clic to show more photos';
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background: #4c6110;
+    background: linear-gradient(315deg, #5592BB, #4c6110);
+
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateX(-99%);
+    z-index: 1;
+    animation: effect_one 10s infinite;
+}
+
+.card-int__button:hover::before {
+    transform: translateX(0%);
+}
+
+.excerpt {
+    font-size: 14px;
+}
+
+@keyframes effect_one {
+    0% {
+        transform: translateX(-99%);
+    }
+
+    25% {
+        transform: translateX(-90%);
+    }
+
+    50% {
+        transform: translateX(-80%);
+    }
+
+    75% {
+        transform: translateX(-95%);
+    }
+
+    100% {
+        transform: translateX(-99%);
+    }
+}
+
+@keyframes effect_two {
+    to {
+        transform: translateX(-1%);
+    }
+
+    from {
+        transform: translateX(-99%);
+    }
+}
+
+/* Home */
+
+.header-home {
+    position: relative;
+    text-align: center;
+}
+
+.header-home {
+    position: relative;
+    background-color: #db7e16;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 1px;
+    border-radius: 8px;
+}
+
+.header-home::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #db7e16 0%, #72eff1 100%);
+    z-index: -10;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.header-home::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(4rem);
+}
+
+
+.header-home:hover::after {
+    filter: blur(40px);
+}
+
+.header-home:hover::before {
+    transform: rotate(-180deg) scaleX(1.05) scaleY(0.77);
+}
+
+
+
+.hero-home {
+    background-image: url('../images/rafting_05.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-home h1 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: white;
+}
+
+
+.container-home {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin-top: 1.3rem;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.grid-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: #333;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: .8s;
+}
+
+
+.grid-item img:hover {
+    -moz-transform: scale(1.06) skew(0deg, 0deg);
+    -webkit-transform: scale(1.06) skew(0deg, 0deg);
+    -o-transform: scale(1.06) skew(0deg, 0deg);
+    -ms-transform: scale(1.06) skew(0deg, 0deg);
+    transform: scale(1.06) skew(0deg, 0deg);
+}
+
+.grid-item h2 {
+    margin: 10px 0;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.newsletter,
+.call-to-action {
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.newsletter h2,
+.call-to-action h2 {
+    margin-top: 0;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.newsletter label {
+    text-align: left;
+    margin-bottom: -20px;
+    color: #333;
+}
+
+.newsletter button {
+    padding: 10px;
+    border: none;
+    background-color: #4c6110;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: var(--nav-hoover-link-color);
+}
+
+.call-to-action p {
+    margin: 10px 0;
+    color: #333;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4c6110;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.cta-button:hover {
+    background-color: var(--nav-hoover-link-color)
+}
+
+/* Comment Card Styles */
+
+.comentario {
+    margin: -10px 0;
+}
+
+.comentario h2 {
+    padding-left: 1.5rem;
+}
+
+.comment-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.user-details {
+    flex: 1;
+}
+
+.user-name {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.comment-date {
+    margin: 5px 0 0 0;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.star {
+    font-size: 1.5rem;
+    color: gold;
+    margin-right: 5px;
+}
+
+.star:last-child {
+    margin-right: 0;
+}
+
+.comment-text {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+    font-style: italic;
+}
+
+/*Premio Star*/
+
+.container-premio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 5em;
+    font-weight: 900;
+    position: relative;
+    transition: all 1s ease;
+    text-align: center;
+    margin-top: 0.3em;
+}
+
+.container__star {
+    transition: all .7s ease-in-out;
+}
+
+.first {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    transition: all .7s ease-in-out;
+}
+
+.svg-icon {
+
+    position: absolute;
+    fill: #fff;
+    z-index: 1;
+}
+
+.star-eight {
+    background: #4c6110;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    text-align: center;
+    animation: rot 3s infinite;
+}
+
+.star-eight::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 150px;
+    background: #4c6110;
+    transform: rotate(135deg);
+}
+
+.container-premio:hover .container__star {
+    transform: rotateX(70deg) translateY(250px);
+    box-shadow: 0px 0px 120px -100px #e4e727;
+
+}
+
+.container-premio:hover .svg-icon {
+    animation: grow 1s linear infinite;
+    fill: #a3cef1;
+    border: solid 1px #db7e16;
+
+}
+
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(340deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes grow {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-5deg);
+    }
+
+    75% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
 }

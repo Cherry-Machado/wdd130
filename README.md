@@ -13,3 +13,5 @@ Week05 Form Project: https://cherry-machado.github.io/wdd130/week05/poll-form.ht
 Week05 Quiz Project: https://cherry-machado.github.io/wdd130/quiz.html
 
 Week05 Contact Us Project: https://cherry-machado.github.io/wdd130/wwr/contact.html
+
+Week06 and Week07, Final Project: Week 01 project: https://cherry-machado.github.io/wdd130/wwr
